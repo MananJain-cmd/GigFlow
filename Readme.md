@@ -133,26 +133,13 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
+## Docker Setup
 
----
+Run the application using Docker:
 
-## API Endpoints
-
-### Authentication
-
-* POST /api/auth/register
-* POST /api/auth/login
-
-### Leads
-
-* GET /api/leads
-* POST /api/leads
-* GET /api/leads/:id
-* PUT /api/leads/:id
-* DELETE /api/leads/:id
-
----
-
+```bash
+docker-compose up --build
+```
 ## Deployment
 
 Frontend can be deployed on Vercel or Netlify.
